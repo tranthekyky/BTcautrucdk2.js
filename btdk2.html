@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính BMI và phân loại</title>
+</head>
+
+<body>
+    <script>
+        let weight = parseFloat(prompt("Nhập số cân nặng ( kg ))"));
+        let height = parseFloat(prompt("Nhập số chiều cao ( m )"));
+        let bmi = weight / (height * height);
+        if (bmi < 18.5) {
+            document.write("BMI = " + bmi + " - Underweight");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            document.write("BMI = " + bmi + " - Normal");
+        } else if (bmi >= 25 && bmi < 30) {
+            document.write("BMI = " + bmi + " - Overweight");
+        } else if (bmi <= 30) {
+            document.write("BMI = " + bmi + " - Obese");
+        }
+    </script>
+</body>
+
+</html>
